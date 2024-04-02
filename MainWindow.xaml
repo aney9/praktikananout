@@ -1,0 +1,27 @@
+﻿<Window x:Class="praktika3.en.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:praktika3.en"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <DataGrid x:Name="dg1" SelectionChanged="dg1_SelectionChanged" IsReadOnly="True" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding Clients.ClientSurname}" Header="Фамилия"/>
+                <DataGridTextColumn Binding="{Binding Clients.ClientName}" Header="Имя"/>
+                <DataGridTextColumn Binding="{Binding Clients.ClientMiddlename}" Header="Отчество"/>
+                <DataGridTextColumn Binding="{Binding Clients.FanId}" Header="ФАНАЙДИ"/>
+                <DataGridTextColumn Binding="{Binding Clients.PhoneNumber}" Header="Тел. номер"/>
+                <DataGridTextColumn Binding="{Binding Clients.Email}" Header="Почта"/>
+                <DataGridTextColumn Binding="{Binding Mesto.Sektor}"  Header="Сектор"/>
+                <DataGridTextColumn Binding="{Binding Mesto.Ryad}" Header="Ряд"/>
+                <DataGridTextColumn Binding="{Binding Mesto.Mesto1}" Header="Место"/>
+                <DataGridTextColumn Binding="{Binding Price}" Header="Цена"/>
+                <DataGridTextColumn Binding="{Binding DataPokupki}" Header="Дата покупки"/>
+
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>
